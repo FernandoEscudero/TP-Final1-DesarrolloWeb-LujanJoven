@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Permanent+Marker&display=swap');
+
+
+
+
+body {
+    margin: 0px;
+    background-image: url("./GettyImages-1339215467.webp");
+    background-repeat: no-repeat;
+    background-size: 200%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+header {
+    border: 1px solid burlywood;
+    border-radius: 0px 0px 10px 10px;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    box-shadow: -7px -8px 20px 0px;
+    justify-content: space-between;
+    background-color: #fff8;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    margin-top: -8vh;
+    z-index: 100;
+}
+
+#nombre,
+#buscador {
+    width: 24vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#nombre {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 4vh;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#nombre p::after {
+    content: "LJ";
+    color: rgb(31, 126, 163);
+    /* color: rgb(8, 197, 197); */
+}
+
+#nombre img {
+    height: 100%;
+    border-radius: 100%;
+    margin: 0px 30px;
+}
+
+#secciones {
+    width: 52vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#secciones a {
+    color: black;
+    padding: 10px;
+    font-size: 2vh;
+    border-radius: 10px;
+    background-color: white;
+    text-decoration: none;
+    margin: 0px 3vh;
+    letter-spacing: 1px;
+    transition: .6s;
+    font-weight: 500;
+}
+
+#secciones a:hover {
+    font-size: 2.2vh;
+    letter-spacing: 2px;
+    padding: 12px;
+
+}
+
+#buscador {
+    display: flex;
+    justify-content: space-around;
+}
+
+#buscador input {
+    width: 60%;
+    height: 4vh;
+    border-radius: 10px;
+    border: 0px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    padding-left: 10px;
+    border: 1px solid black;
+
+}
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8vh;
+}
+
+#portada {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#portada h1 {
+    font-size: 7vh;
+}
+
+#portada h1::after {
+    content: "Luján Joven";
+    color: rgb(31, 126, 163);
+}
+
+#portada p {
+    margin-top: -3vh;
+    font-size: 2.5vh;
+    font-weight: 400;
+}
+
+#inicio {
+    width: 90%;
+    height: 70vh;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabañas {
+    width: 28vw;
+    height: 57vh;
+    display: flex;
+    background-color: rgba(51, 50, 50, 0.356);
+    backdrop-filter: blur(5px);
+    align-items: center;
+    flex-direction: column;
+    transition: all .4s;
+}
+
+.cabañas:hover {
+    box-shadow: inset 0px 0px 14px 5px white;
+    margin-top: -1vh;
+}
+
+.cabañas img {
+    width: 26vw;
+    height: 36vh;
+    margin-top: 2vh;
+    border: 1px solid burlywood;
+}
+
+.cabañas p {
+    color: white;
+    padding: 0px -3vw;
+    font-size: 1.8vh;
+
+}
+
+#cabaña1 a,
+#cabaña3 a {
+    color: rgb(248, 195, 126);
+    margin: -2vh 0vw 0vh 13vw;
+    font-size: 2.3vh;
+    transition: .2s;
+}
+
+#cabaña1::after {
+    content: "Cabañas";
+    display: inline-block;
+    font-size: 3vh;
+
+    position: absolute;
+    left: 1vw;
+    margin-top: 2vh;
+    background-image: linear-gradient(120deg, white, gold);
+    background-size: 150%;
+    padding: .4vh .5vw;
+    border-radius: 0 2vh 2vh 0;
+}
+
+#cabaña2::after {
+    content: "Hoteles";
+    display: inline-block;
+    font-size: 3vh;
+    position: absolute;
+    left: 1vw;
+    margin-top: 2vh;
+    background-image: linear-gradient(120deg, white, gold);
+    background-size: 150%;
+    padding: .4vh .5vw;
+    border-radius: 0 2vh 2vh 0;
+}
+
+#cabaña3::after {
+    content: "Tour guiado";
+    display: inline-block;
+    font-size: 3vh;
+    position: absolute;
+    left: 1vw;
+    margin-top: 2vh;
+    background-image: linear-gradient(120deg, white, gold);
+    background-size: 150%;
+    padding: .4vh .5vw;
+    border-radius: 0 2vh 2vh 0;
+}
+
+#cabaña2 a {
+    color: rgb(248, 195, 126);
+    margin: 0vh 0vw 1.2vh 13vw;
+    font-size: 2.3vh;
+    transition: .2s;
+}
+
+.cabañas a:hover {
+    letter-spacing: 2px;
+}
+
+#sobrenosotros {
+    width: 100%;
+    height: 70vh;
+    /* margin-top: 17vh; */
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(31, 126, 163);
+    align-items: center;
+    border-top: 16vh solid white;
+}
+
+#logo2 img {
+    width: 18vw;
+    border-radius: 100%;
+    transition: all .3s;
+}
+
+#logo2 img:hover {
+    box-shadow: 0 0 20px 0;
+}
+
+
+#titulo {
+    width: 29vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#titulo h1 {
+    color: rgb(255, 255, 255);
+    font-size: 5.5vh;
+    margin-left: 3vw;
+    text-decoration: underline rgba(245, 222, 179, 0.705);
+    margin: 2vh;
+}
+
+#titulo p {
+    font-size: 2vh;
+    letter-spacing: .06vw;
+}
+
+#imagenes {
+    display: flex;
+    flex-direction: column;
+    width: 28vw;
+}
+
+#imagenes img {
+    height: 100%;
+    width: 100%;
+    border-radius: 2vw;
+    object-fit: cover;
+    margin: 1vh;
+}
+
+
+#servicios {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    border-top: 16vh solid white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background-image: linear-gradient(45deg, white, rgb(22, 156, 127)); */
+    background-size: 300%;
+}
+
+#nombreservicio {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    cursor: default;
+    background-image: linear-gradient(45deg, white, rgb(22, 156, 127));
+
+}
+
+#nombreservicio p {
+    padding: 5vh 38vw;
+    margin: 0px;
+    transition: all .4s;
+    color: black;
+    font-size: 2.5vw;
+    letter-spacing: .5vw;
+
+}
+
+#nombreservicio p:hover {
+    letter-spacing: 1vw;
+}
+
+
+#servicios1 {
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#tipos {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgba(31, 126, 163, 0.281); */
+
+}
+
+#division1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vh;
+    justify-content: center;
+}
+
+
+#division1 button {
+    color: black;
+    border: 3px solid black;
+    padding: 1vh .9vw;
+    font-size: 2.6vh;
+    border-radius: 10px;
+    background-color: white;
+    text-decoration: none;
+    margin: 0px .6vw 0px 0px;
+    letter-spacing: 1px;
+    transition: .2s;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+
+}
+
+#division1 button:hover {
+    letter-spacing: 3px;
+    box-shadow: 0 3px 8px 0px;
+}
+
+
+#division1 button:focus {
+    background-color: rgb(31, 126, 163);
+}
+
+#division2 {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+#buscar {
+    width: 20vw;
+    height: 6vh;
+    border-radius: 3vh;
+    border: 3px solid rgb(31, 126, 163);
+    display: inline-block;
+    transition: .2s;
+    font-size: 2vh;
+    padding-left: 2vw;
+}
+
+#buscar:hover {
+    width: 23vw;
+}
+
+#buscar::placeholder {
+    font-size: 2vh;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* corregir el borde del input al presionarlo */
+
+#division3 {
+    display: flex;
+    justify-content: center;
+}
+
+#division3 p {
+    font-size: 2.5vh;
+}
+
+#division4 {
+    display: flex;
+    justify-content: center;
+
+}
+
+#fecha {
+    border: 2px solid rgb(31, 126, 163);
+    height: 4vh;
+    border-radius: 3vh;
+    width: 10vw;
+    padding-left: 2vw;
+    font-size: 1.8vh;
+}
+
+#division5 {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.division5 {
+    width: 10vw;
+    height: 4vh;
+    border-radius: 3vh;
+    border: 2px solid rgb(31, 126, 163);
+    font-size: 2.5vh;
+    padding-left: 2vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.division5::placeholder {
+    font-size: 1.5vh;
+    letter-spacing: 2px;
+}
+
+#division6 {
+    width: 100%;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#division6 a {
+    color: black;
+    font-size: 3vh;
+    letter-spacing: 1px;
+    /* background-color: rgba(47, 209, 155, 0.418); */
+    /* background-image: linear-gradient(45deg, white, rgba(47, 209, 155, 0.26)); */
+    background-size: 100vw;
+    padding: 1vh;
+    border-radius: 3vh;
+    transition: all .1s;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+#division6 a:hover {
+    letter-spacing: 3px;
+    background-position: -90vw;
+    border-bottom: 3px solid black;
+}
+
+#grid {
+    width: 35vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 15vh);
+    grid-gap: 1vh;
+    background-color: rgba(31, 126, 163, 0.158);
+    padding: 1vh;
+    transition: all .3s;
+    border-radius: 3vh;
+}
+
+#grid:hover {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 15.5vh);
+    width: 36vw;
+    grid-gap: 1.5vh;
+    box-shadow: 0 2px 4px 0 rgb(31, 126, 163);
+
+}
+
+#grid img {
+    height: 100%;
+    width: 100%;
+    border-radius: 3vh;
+    object-fit: cover;
+}
+
+#img1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    transition: all .2s;
+}
+
+#img1:hover {
+    height: 101%;
+    width: 100.5%;
+    box-shadow: 0 2px 5px 0;
+}
+
+
+#img2 {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    transition: all .2s;
+}
+
+#img2:hover {
+    height: 101%;
+    width: 100.5%;
+    box-shadow: 0 2px 5px 0;
+}
+
+#img3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    transition: all .2s;
+}
+
+
+#img3:hover {
+    height: 101%;
+    width: 100.5%;
+    box-shadow: 0 2px 5px 0;
+}
+
+#img4 {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    transition: all .2s;
+}
+
+#img4:hover {
+    height: 101%;
+    width: 100.5%;
+    box-shadow: 0 2px 5px 0;
+}
+
+#img5 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    transition: all .2s;
+}
+
+#img5:hover {
+    height: 101%;
+    width: 100.5%;
+    box-shadow: 0 2px 5px 0;
+}
+
+#img6 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    transition: all .2s;
+}
+
+#img6:hover {
+    height: 101%;
+    width: 100.5%;
+    box-shadow: 0 2px 5px 0;
+}
+
+#img7 {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    transition: all .2s;
+}
+
+#img7:hover {
+    height: 101%;
+    width: 100.5%;
+    box-shadow: 0 2px 5px 0;
+}
+
+
+
+footer {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+}
+
+#contactanos {
+    width: 80vw;
+    height: 15vh;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logofinal {
+    display: flex;
+    width: 15vw;
+    justify-content: left;
+    align-items: center;
+}
+
+#logofinal img {
+    height: 55%;
+    border-radius: 100%;
+}
+
+#logofinal p {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.8vh;
+    display: flex;
+    justify-content: flex-start;
+    cursor: default;
+    margin-left: 1vw;
+}
+
+#logofinal p::after {
+    content: "LJ";
+    color: rgb(31, 126, 163);
+    /* color: rgb(8, 197, 197); */
+}
+
+#redes {
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#redes a {
+    color: black;
+    font-size: 4vh;
+    padding: 9px 15px;
+}
+
+#redes a:hover {
+    border: 1px solid rgb(31, 126, 163);
+    border-radius: 100%;
+    color: rgb(31, 126, 163);
+}
+
+#numero {
+    display: flex;
+    width: 15vw;
+    justify-content: left;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#numero p {
+    font-size: 1.2vh;
+    margin: .8vh;
+}
+
+#p1::after {
+    content: "2615555555";
+    color: rgba(0, 0, 0, 0.651);
+}
+
+#p2::after {
+    content: "Luján Joven, Luján de Cuyo";
+    color: rgba(0, 0, 0, 0.651);
+}
